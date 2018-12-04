@@ -1,15 +1,11 @@
-const koa = require( "koa" )
+const koa = require( "koa" ),
+    logger = require( "./logger" )
 
 const app = new koa()
 
-const env = app.env
-
 app.use ( async ( ctx, next ) => {
-    console.log( ctx )
 } )
 
 app.listen( 8888, () => {
-    console.log( "server listen on 8888" )
+    logger.info( "server listen on 8888" )
 } )
-
-console.log( env )
