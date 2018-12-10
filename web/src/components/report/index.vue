@@ -12,6 +12,9 @@ export default {
     };
   },
   methods: {
+  },
+  mounted() {
+    console.log( 111 )
   }
 };
 </script>
