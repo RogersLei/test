@@ -16,13 +16,18 @@
 </template>
 
 <script>
+import API from "@/api";
+
 export default {
+  name: "app-header",
   data() {
     return {
     };
   },
   methods: {
-  }
+  },
+  mounted() {
+  },
 };
 </script>
 
